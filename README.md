@@ -12,3 +12,5 @@ I recommend this guide of [How AppVeyor works](https://www.appveyor.com/docs/ent
   ● To begin with, we will need to create an account on AppVeyor using our GitHub account.
 
   ● Then, we will need to authorize it. If the GitHub repository to apply it is from an organization, it will require the authorization of the organization's owner. So it’s recommended to be done by the owner himself.
+  
+   <img src="WebPageAssets/captura1.png" alt="hi" class="inline">
