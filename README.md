@@ -13,4 +13,4 @@ I recommend this guide of [How AppVeyor works](https://www.appveyor.com/docs/ent
 
   ● Then, we will need to authorize it. If the GitHub repository to apply it is from an organization, it will require the authorization of the organization's owner. So it’s recommended to be done by the owner himself.
   
-         <img src="WebPageAssets/captura1.png">
+   <img src="WebPageAssets/captura1.png" alt="hi" class="inline">
