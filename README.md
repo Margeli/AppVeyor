@@ -82,4 +82,27 @@ I recommend to put together in a folder the ReadMe, the assets and the libraries
 So we need to upload this _Game_ folder together with the executable of the game, that will be given by AppVeyor once it has made the Release. To do it we need to go again to the project _Settings_. 
 Firstly we need to go to _Build_ section and fill the _Configuration_ option with Debug and Release.  We put both to check that there’s no problem compiling the code in Debug nor Release mode. Then, as we said before, we need to get the executable given after the AppVeyor does the Release to our code. So in _Before packaging script_ we need to insert a script in PS (_PowerShell_) language which will copy this executable to the _Game_ folder, to have all together. 
 
+The script is the following:
+```ruby
+Copy-Item C:\projects\(your_project_name)\$env:CONFIGURATION\(your_solution_name).exe C:\projects\(your_project_name)\Game\.
+```
+_"($env:CONFIGURATION): refers to Debug or Release folder"_
+
+Below we have an example 
+
+<img src="WebPageAssets/captura9.png" alt="hi" class="inline">
+
+So now, after it is done the Release to our code, the folder _Game_ will contain all that a correct built needs. So the last step is to upload this folder to our GitHub Release page.
+It is configured in the section _Artifacts_ where we need to put the path to the folder _Game_, with a name for the release and selected the _Web Deploy Package_ type.
+
+<img src="WebPageAssets/captura10.png" alt="hi" class="inline">
+
+If the steps are followed correctly the build should be upload to Release page as a draft every time a commit is done in the project. I recommend, as we said before, to export all the configuration to YAML and upload to the repository to allow the modification directly from GitHub.
+
+### Links to more documentation
+[Official AppVeyor Tutorial](https://www.appveyor.com/docs/)
+
+[Documentation of the configuration of AppVeyor](https://www.appveyor.com/docs/build-configuration/)
+
+[How AppVeyor works](https://www.appveyor.com/docs/enterprise/how-to/how-appveyor-works/)
 
