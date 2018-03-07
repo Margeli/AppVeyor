@@ -53,4 +53,33 @@ It is found in _Deployment_  and is need to change the deployment provider to Gi
 
 <img src="WebPageAssets/captura6.png" alt="hi" class="inline">
 
-We will make a parenthesis to show how to get it.
+We will make a parenthesis to show how to get it:
+
+### How to get your GitHub authentication token
+
+First of all, it’s important to say that an authentication token is like a password, so manage them like that. The difference is that it is used for scripts or commands, in a addition you can revoke them and generate lots of them. 
+So, to generate one of them you need to go [Here](https://github.com/settings/tokens) or manually going to your GitHub, and go to _Settings_ (the general settings, not the repository ones). There is a section _Developer Settings_ with a subsection _Personal Access Tokens_.
+
+<img src="WebPageAssets/captura7.png" alt="hi" class="inline">
+
+There you need to _Generate a new token_ and just select the scope _public_repo_  and then Generate it.
+
+<img src="WebPageAssets/captura8.png" alt="hi" class="inline">
+
+Once done the token has to be copied to [Here](https://ci.appveyor.com/tools/encrypt) to encrypt the token, the result is an encrypted token that has to be copied to the _GitHub authentication token_ in the _Deployment_ setting that we were talking before.
+
+## Configurating AppVeyor II
+
+At this point AppVeyor is capable to access to the Release GitHub page. 
+
+So our objective is to make AppVeyor do automated builds from our GitHub repository, but we need to remind which items a build should have:
+- A README.md file
+- A folder with all the Assets of the game and the libraries .dll
+- The executable of the game .exe
+
+I recommend to put together in a folder the ReadMe, the assets and the libraries to make the process easily. In all the explanation we will refer to this folder as _\Game_.
+
+So we need to upload this _Game_ folder together with the executable of the game, that will be given by AppVeyor once it has made the Release. To do it we need to go again to the project _Settings_. 
+Firstly we need to go to _Build_ section and fill the _Configuration_ option with Debug and Release.  We put both to check that there’s no problem compiling the code in Debug nor Release mode. Then, as we said before, we need to get the executable given after the AppVeyor does the Release to our code. So in _Before packaging script_ we need to insert a script in PS (_PowerShell_) language which will copy this executable to the _Game_ folder, to have all together. 
+
+
