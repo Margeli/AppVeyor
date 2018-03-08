@@ -22,7 +22,7 @@ I recommend this guide of [How AppVeyor works](https://www.appveyor.com/docs/ent
 
    ● Once we have synchronized both applications, we can go on with AppVeyor creating a new project and selecting the GitHub repository which we want to have automated builds. 
 
-   ● Now we have our project in AppVeyor, by default every time we make a commit, it will try make a built, but it probably fail due to the app configuration is not the correct. So the next step is how to configure it. 
+   ● Now we have our project in AppVeyor, by default every time we make a commit, it will try make a built, but it probably fails due to the app configuration is not the correct. So the next step is how to configure it. 
  
  
 ## Configuring AppVeyor
@@ -60,7 +60,7 @@ We will make a parenthesis to show how to get it:
 
 ### How to get your GitHub authentication token
 
-First of all, it’s important to say that an authentication token is like a password, so manage them like that. The difference is that it is used for scripts or commands, in a addition you can revoke them and generate lots of them. 
+First of all, it’s important to say that an authentication token is like a password, so manage them like that. The difference is that it is used for scripts or commands, in addition you can revoke them and generate lots of them. 
 So, to generate one of them you need to go [Here](https://github.com/settings/tokens) or manually going to your GitHub, and go to _Settings_ (the general settings, not the repository ones). There is a section _Developer Settings_ with a subsection _Personal Access Tokens_.
 
 <img src="WebPageAssets/captura7.png" alt="hi" class="inline">
@@ -80,7 +80,7 @@ So our objective is to make AppVeyor do automated builds from our GitHub reposit
 - A folder with all the Assets of the game and the libraries .dll
 - The executable of the game .exe
 
-I recommend to put together in a folder the ReadMe, the assets and the libraries to make the process easily. In all the explanation we will refer to this folder as _\Game_.
+It is recommended putting together in a folder the ReadMe, the assets and the libraries to make the process easily. In all the explanation we will refer to this folder as _\Game_.
 
 So we need to upload this _Game_ folder together with the executable of the game, that will be given by AppVeyor once it has made the Release. To do it we need to go again to the project _Settings_. 
 Firstly we need to go to _Build_ section and fill the _Configuration_ option with Debug and Release.  We put both to check that there’s no problem compiling the code in Debug nor Release mode. Then, as we said before, we need to get the executable given after the AppVeyor does the Release to our code. So in _Before packaging script_ we need to insert a script in PS (_PowerShell_) language which will copy this executable to the _Game_ folder, to have all together. 
@@ -102,11 +102,11 @@ It is configured in the section _Artifacts_ where we need to put the path to the
 
 <img src="WebPageAssets/captura10.png" alt="hi" class="inline">
 
-If the steps are followed correctly the build should be upload to Release page as a draft every time a commit is done in the project. I recommend, as we said before, to export all the configuration to YAML format and upload to the repository to allow the modification directly from GitHub.
+If the steps are followed correctly the build should be uploaded to Release page as a draft every time a commit is done in the project. I recommend, as we said before, to export all the configuration to YAML format and upload to the repository to allow the modification directly from GitHub.
 
 <img src="WebPageAssets/captura11.png" alt="hi" class="inline">
 
-Another useful feature that AppVeyor provides is _Notification_, every time a built is done it will notificate through the channels that you prefer, the most common are Email, Slack.. There, you can select when it has to notificates you. Whether the built has been upload succesfully or it failed, or both. 
+Another useful feature that AppVeyor provides is _Notification_, every time a built is done it will notificate it through the channels that you prefer, the most common are Email, Slack.. There, you can select when it has to notificates you. Whether the built has been upload successfully or it failed, or both. 
 
 <img src="WebPageAssets/captura12.png" alt="hi" class="inline">
 
