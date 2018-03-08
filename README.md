@@ -2,7 +2,7 @@
 
 ## Introducing AppVeyor
 
-In the development of video games, every time a feature is added to the game in progress, it has to be tested to look for bugs or design issues, to do it correctly, the developers should upload a release with the new feature added to GitHub, and then the QA of the team will check for this errors. So in order to save time and not to make every time a built for the release manually, it’s recommended the usage of the free application [AppVeyor](https://www.appveyor.com/). We will focus on how to use AppVeyor, but there are other similar applications that share the same results, like [Jenkins](https://jenkins.io/) or [Travis CI](https://travis-ci.com/).
+In the development of video games, every time a feature is added to the game in progress, it has to be tested to look for bugs or design issues, to do it correctly, the developers should upload a release with the new feature added to GitHub, and then the QA of the team will check for these errors. So in order to save time and not to make every time a built for the release manually, it’s recommended the usage of the free application [AppVeyor](https://www.appveyor.com/). We will focus on how to use AppVeyor, but there are other similar applications that share the same results, like [Jenkins](https://jenkins.io/) or [Travis CI](https://travis-ci.com/).
 
 AppVeyor, every time a commit is done to the code, it automatically uploads the build with all the needed artifacts to the Release page of GitHub giving you feedback of how the build has been done. 
 
