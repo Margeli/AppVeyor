@@ -101,6 +101,8 @@ It is configured in the section _Artifacts_ where we need to put the path to the
 
 If the steps are followed correctly the build should be upload to Release page as a draft every time a commit is done in the project. I recommend, as we said before, to export all the configuration to YAML and upload to the repository to allow the modification directly from GitHub.
 
+<img src="WebPageAssets/captura11.png" alt="hi" class="inline">
+
 ### Links to more documentation
 [Official AppVeyor Tutorial](https://www.appveyor.com/docs/)
 
