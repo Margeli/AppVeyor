@@ -22,7 +22,7 @@ I recommend this guide of [How AppVeyor works](https://www.appveyor.com/docs/ent
    ● Now we have our project in AppVeyor, by default every time we make a commit, it will try make a built, but it probably fail due to the app configuration is not the correct. So the next step is how to configure it. 
  
  
-## Configurating AppVeyor
+## Configuring AppVeyor
 
 First of all you need to know that there are two ways to configure an AppVeyor project. 
 The first one it is found in the project itself, in the Settings section; there, there is an interface to help you configure the whole project. 
@@ -68,7 +68,7 @@ There you need to _Generate a new token_ and just select the scope _public_repo_
 
 Once done the token has to be copied to [Here](https://ci.appveyor.com/tools/encrypt) to encrypt the token, the result is an encrypted token that has to be copied to the _GitHub authentication token_ in the _Deployment_ setting that we were talking before.
 
-## Configurating AppVeyor II
+## Back to AppVeyor
 
 At this point AppVeyor is capable to access to the Release GitHub page. 
 
