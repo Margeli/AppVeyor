@@ -25,7 +25,7 @@ I recommend this guide of [How AppVeyor works](https://www.appveyor.com/docs/ent
 ## Configuring AppVeyor
 
 First of all you need to know that there are two ways to configure an AppVeyor project. 
-The first one it is found in the project itself, in the Settings section; there, there is an interface to help you configure the whole project. 
+The first one it is found in the project itself, in the _Settings_ section; there, there is an interface to help you configure the whole project. 
 
  <img src="WebPageAssets/captura2.png" alt="hi" class="inline">
  
@@ -49,7 +49,7 @@ The next important setting is found in Environment where you have to select whic
 <img src="WebPageAssets/captura5.png" alt="hi" class="inline">
 
 Another relevant option is that one that upload the build done to our GitHub releases page. 
-It is found in _Deployment_  and is need to change the deployment provider to GitHub Releases. It is recommended to add a Release description and mark the Draft Release to avoid having all the releases you made there. But before all of that is needed an authentication from GitHub to let AppVeyor modify our repository. It is done through a GitHub authentication token. 
+It is found in _Deployment_  and is need to change the deployment provider to _GitHub Releases_. It is recommended to add a Release description and mark the _Draft Release_ to avoid having all the releases you made there. But before all of that is needed an authentication from GitHub to let AppVeyor modify our repository. It is done through a **GitHub authentication token**. 
 
 <img src="WebPageAssets/captura6.png" alt="hi" class="inline">
 
@@ -103,7 +103,7 @@ If the steps are followed correctly the build should be upload to Release page a
 
 <img src="WebPageAssets/captura11.png" alt="hi" class="inline">
 
-Another useful feature that AppVeyor provides is Notification, every time a built is done it will notificate through the channels that you prefer, the most common are Email, Slack.. There, you can select when it has to notificates you. Whether the built has been upload succesfully or it failed, or both. 
+Another useful feature that AppVeyor provides is _Notification_, every time a built is done it will notificate through the channels that you prefer, the most common are Email, Slack.. There, you can select when it has to notificates you. Whether the built has been upload succesfully or it failed, or both. 
 
 <img src="WebPageAssets/captura12.png" alt="hi" class="inline">
 
