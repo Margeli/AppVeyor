@@ -99,9 +99,13 @@ It is configured in the section _Artifacts_ where we need to put the path to the
 
 <img src="WebPageAssets/captura10.png" alt="hi" class="inline">
 
-If the steps are followed correctly the build should be upload to Release page as a draft every time a commit is done in the project. I recommend, as we said before, to export all the configuration to YAML and upload to the repository to allow the modification directly from GitHub.
+If the steps are followed correctly the build should be upload to Release page as a draft every time a commit is done in the project. I recommend, as we said before, to export all the configuration to YAML format and upload to the repository to allow the modification directly from GitHub.
 
 <img src="WebPageAssets/captura11.png" alt="hi" class="inline">
+
+Another useful feature that AppVeyor provides is Notification, every time a built is done it will notificate through the channels that you prefer, the most common are Email, Slack.. There, you can select when it has to notificates you. Whether the built has been upload succesfully or it failed, or both. 
+
+<img src="WebPageAssets/captura12.png" alt="hi" class="inline">
 
 ### Links to more documentation
 [Official AppVeyor Tutorial](https://www.appveyor.com/docs/)
