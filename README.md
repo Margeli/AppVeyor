@@ -87,6 +87,7 @@ The script is the following:
 Copy-Item C:\projects\(your_project_name)\$env:CONFIGURATION\(your_solution_name).exe C:\projects\(your_project_name)\Game\.
 ```
 _"Where the directory to copy is the solution of your Debug/Release, and the directory to paste it is your Game carpet"_
+
 _"($env:CONFIGURATION): refers to Debug or Release folder"_
 
 Below we have an example 
