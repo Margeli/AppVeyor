@@ -1,9 +1,12 @@
 “I am [Carles Margelí](https://www.linkedin.com/in/carles-margel%C3%AD-549ab415a/), student of the [Bachelor’s Degree in Video Games by UPC at CITM](https://www.citm.upc.edu/cat/). This content is generated for the second year’s subject Project 2, under supervision of lecturer [Ricard Pillosu](https://www.linkedin.com/in/ricardpillosu/).”
 
-In this article we will talk about how to avoid making builts manually in GitHub everytime a Release is made to be tested.
-So, our objective, is to have an automated process that every time a commit in our code is done, a built of it is published in our repository in GitHub, including all the needed files.
-To achieve it, we will be using an external application, AppVeyor. 
-Following this guide step by step we will understand how AppVeyor works and how to configure it to obtain our desired results. 
+## Introducing AppVeyor
+
+In the development of video games, every time a feature is added to the game in progress, it has to be tested to look for bugs or design issues, to do it correctly, the developers should upload a release with the new feature added to GitHub, and then the QA of the team will check for this errors. So in order to save time and not to make every time a built for the release manually, it’s recommended the usage of the free application [AppVeyor](https://www.appveyor.com/). We will focus on how to use AppVeyor, but there are other similar applications that share the same results, like [Jenkins](https://jenkins.io/) or [Travis CI](https://travis-ci.com/).
+
+AppVeyor, every time a commit is done to the code, it automatically uploads the build with all the needed artifacts to the Release page of GitHub giving you feedback of how the build has been done. 
+
+So, in this article we will talk about how to configure AppVeyor to do automatically builds to GitHub. Following this guide step by step we will understand how AppVeyor works and how to configure it to obtain our desired results. 
 
 I recommend this guide of [How AppVeyor works](https://www.appveyor.com/docs/enterprise/how-to/how-appveyor-works/) to understand the internal processes that it does. Even it is not necessary to understand the process we will make in this article.
 
