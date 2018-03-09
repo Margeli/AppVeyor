@@ -6,7 +6,7 @@ configuration:
 build:
   verbosity: normal
 before_package:
-- ps: Copy-Item C:\projects\AppVeyorResearch\Game_Files\$env:CONFIGURATION\Motor2D.exe C:\projects\AppVeyorResearch\Game_Files\Game\.
+- ps: Copy-Item C:\projects\AppVeyorResearch\$env:CONFIGURATION\Motor2D.exe C:\projects\AppVeyorResearch\Game_Files\Game\.
 artifacts:
 - path: Game
   name: game_files
