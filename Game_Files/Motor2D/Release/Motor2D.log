@@ -1,14 +1,4 @@
-﻿  j1Main.cpp
-  j1App.cpp
-  j1Audio.cpp
-  j1Input.cpp
-  j1Scene.cpp
-  p2Log.cpp
-  j1Render.cpp
-  j1Textures.cpp
-  j1Window.cpp
-  pugixml.cpp
-  Generando código
+﻿  Generando código
   All 259 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Generación de código finalizada
-  Motor2D.vcxproj -> C:\Users\carles\Documents\GitHub\XML\Release\Motor2D.exe
+  Motor2D.vcxproj -> C:\Users\carles\Documents\GitHub\AppVeyorResearch\Release\Motor2D.exe
