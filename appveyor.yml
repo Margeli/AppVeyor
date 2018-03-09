@@ -13,7 +13,7 @@ deploy:
 - provider: GitHub
   description: Auto-generated release
   auth_token:
-    secure: EvCROCHCyi5Cm+1FwVbr1SIMpOV5bJdHMpixBlH6XmwyFd84y34dHiF9nsx7QohQ
+    secure: puZLxyEe+8sSFd4Ade4nQQaTuj1XePC1Wt1uZbVKl0DusVMx/UjQigTKViAbZsEh
   draft: true
   prerelease: false
   
